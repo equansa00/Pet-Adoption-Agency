@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt a Pet</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('list_pets') }}">Home</a>
+        <a href="{{ url_for('add_pet') }}">Add Pet</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
